@@ -15,4 +15,4 @@ jobs:
           port: 2222
           username: miriam
           key: ${{ secrets.PRIVATE_KEY }}
-          script: "cd C:\\laragon\\www\\pruebaDPL; git pull origin main; npm run build"
+          script: "cd /var/www/html/pruebaDPL; git pull origin main; npm run build"
