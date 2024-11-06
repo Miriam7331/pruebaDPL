@@ -15,4 +15,4 @@ jobs:
           port: 2222
           username: miriam
           key: ${{ secrets.PRIVATE_KEY }}
-          script: "cd /var/www/html/pruebaDPL; git pull origin main; npm run build"
+          script: "cd /var/www/html/pruebaDPL; git pull origin main; php artisan route:cache; sudo service php8.3-fpm reload; npm run build"
